@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DV Electric Vehicle Sales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to DV Electric Vehicle Sales</h1>
+        <p>Your one-stop solution for eco-friendly, electric 2-wheelers and 3-wheelers.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#vehicles">Vehicles</a></li>
+            <li><a href="#emi">EMI Inquiry</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="vehicles">
+        <h2>Our Vehicles</h2>
+        <div class="vehicle-list">
+            <div class="vehicle">
+                <h3>E-Rickshaw Loader</h3>
+                <img src="https://via.placeholder.com/300x200.png?text=E-Rickshaw+Loader" alt="E-Rickshaw Loader">
+                <p>High capacity, 100km range</p>
+                <p>Price: ₹1,20,000</p>
+            </div>
+            <div class="vehicle">
+                <h3>E-Scooter Model X</h3>
+                <img src="https://via.placeholder.com/300x200.png?text=E-Scooter" alt="E-Scooter Model X">
+                <p>60km range, Fast charging</p>
+                <p>Price: ₹85,000</p>
+            </div>
+            <div class="vehicle">
+                <h3>Passenger E-Rickshaw</h3>
+                <img src="https://via.placeholder.com/300x200.png?text=Passenger+E-Rickshaw" alt="Passenger E-Rickshaw">
+                <p>Comfort seating, 4+1 capacity</p>
+                <p>Price: ₹1,30,000</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="emi">
+        <h2>EMI Inquiry</h2>
+        <form action="submit-form.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city"><br>
+
+            <label for="vehicle">Vehicle of Interest:</label>
+            <select id="vehicle" name="vehicle">
+                <option value="E-Rickshaw Loader">E-Rickshaw Loader</option>
+                <option value="E-Scooter Model X">E-Scooter Model X</option>
+                <option value="Passenger E-Rickshaw">Passenger E-Rickshaw</option>
+            </select><br>
+
+            <input type="submit" value="Submit EMI Request">
+        </form>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x200.png?text=Gallery+Image+1" alt="Gallery Image 1">
+            <img src="https://via.placeholder.com/300x200.png?text=Gallery+Image+2" alt="Gallery Image 2">
+            <img src="https://via.placeholder.com/300x200.png?text=Gallery+Image+3" alt="Gallery Image 3">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Showroom Address: Maihar, Madhya Pradesh</p>
+        <p>Phone: <a href="tel:+919999999999">+91 99999 99999</a></p>
+        <p>WhatsApp: <a href="https://wa.me/919999999999" target="_blank">Chat on WhatsApp</a></p>
+        <p><a href="https://goo.gl/maps/xyz" target="_blank">View on Google Maps</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DV Electric Vehicle Sales and Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>
