@@ -1,0 +1,50 @@
+import React from 'react';
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+
+export default function HomePage() {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-green-100 via-white to-blue-100 p-4 text-gray-800">
+      <header className="text-center py-8">
+        <h1 className="text-4xl font-bold text-green-700">Drive the Future – Go Electric with DV!</h1>
+        <p className="text-lg text-blue-700 mt-2">Eco-Friendly. Pocket-Friendly. Future-Ready.</p>
+        <div className="mt-4 flex justify-center gap-4">
+          <Button className="bg-green-600 text-white px-6 py-2 rounded-2xl shadow">View EV Models</Button>
+          <Button className="bg-blue-600 text-white px-6 py-2 rounded-2xl shadow">Book Test Drive</Button>
+        </div>
+      </header>
+
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-6 py-6">
+        <Card className="bg-white shadow-xl rounded-2xl">
+          <CardContent className="p-6">
+            <h2 className="text-xl font-semibold mb-2">🛵 DV Spark - 2 Wheeler</h2>
+            <p>Price: ₹65,000 | Range: 100km | EMI from ₹1,500/month</p>
+            <Button className="mt-4 bg-green-500 text-white">Enquire Now</Button>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-white shadow-xl rounded-2xl">
+          <CardContent className="p-6">
+            <h2 className="text-xl font-semibold mb-2">🛺 DV Load Pro - 3 Wheeler</h2>
+            <p>Price: ₹1,15,000 | Range: 90km | EMI from ₹2,800/month</p>
+            <Button className="mt-4 bg-green-500 text-white">Enquire Now</Button>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="text-center py-8">
+        <h2 className="text-2xl font-bold text-blue-800">Showroom Contact</h2>
+        <p className="mt-2">📍 Vivek Nagar, Rewa Road, Maihar</p>
+        <p>📞 8889898800</p>
+        <a
+          href="https://wa.me/918889898800?text=Hi%20DV%20Showroom"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-4 bg-green-600 text-white px-6 py-2 rounded-2xl shadow"
+        >
+          Chat on WhatsApp
+        </a>
+      </section>
+    </div>
+  );
+}
